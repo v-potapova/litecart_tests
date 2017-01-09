@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head profile="http://selenium-ide.openqa.org/profiles/test-case">
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link rel="selenium.base" href="https://demo.litecart.net/" />
+<title>random_date</title>
+</head>
+<body>
+<table cellpadding="1" cellspacing="1" border="1">
+<thead>
+<tr><td rowspan="1" colspan="3">random_date</td></tr>
+</thead><tbody>
+<tr>
+	<td>open</td>
+	<td>http://demos.jquerymobile.com/1.4.5/datepicker/</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>myDate = new Date(Math.random()*new Date().getTime())</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>$('input.hasDatepicker').datepicker( &quot;setDate&quot;, myDate )</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>$('input.hasDatepicker').datepicker( &quot;refresh&quot; )</td>
+	<td></td>
+</tr>
+<tr>
+	<td>runScript</td>
+	<td>$('div.hasDatepicker').datepicker( &quot;setDate&quot;, myDate )</td>
+	<td></td>
+</tr>
+
+</tbody></table>
+</body>
+</html>
